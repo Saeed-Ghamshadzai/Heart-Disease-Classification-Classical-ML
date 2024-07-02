@@ -34,7 +34,7 @@ Heart-Disease-Classification-Classical-ML/
 │   │   ├── __init__.py
 │   │   └── main.py
 |   |
-│   ├── env/
+│   ├── venv/
 |   |
 │   ├── model/
 │   │   ├── __init__.py
