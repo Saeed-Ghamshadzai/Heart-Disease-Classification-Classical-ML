@@ -14,7 +14,8 @@ Run these commands to set up your virtual environment:
 
     Install dependencies:
         pip install --upgrade pip
-        pip install -r requirements.txt 
+        pip install -r requirements.txt
+        pip install -e app\.
 
     Configure Environment Variables:
         cp app/.env.template app/.env
@@ -32,6 +33,7 @@ Heart-Disease-Classification-Classical-ML/
 ├── app/
 │   ├── api/
 │   │   ├── __init__.py
+│   │   ├── app.log
 │   │   └── main.py
 |   |
 │   ├── venv/
@@ -43,12 +45,18 @@ Heart-Disease-Classification-Classical-ML/
 │   │      ├── model.py
 │   │      └── trained_model-0.1.0.pkl
 |   |
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   └── test_main.py
+|   |
 │   ├── data/
 │   │   ├── __init__.py
 │   │   ├── data.py
 │   │   └── csv_dataset/
 │   │       └── Heart Attack.csv
 |   |
+│   ├── .env.template -> .env
+│   ├── pytest.ini
 │   ├── Notebook.ipynb
 |   └── setup.py
 |
